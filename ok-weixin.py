@@ -10,9 +10,9 @@ import json
 import logging
 
 # logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s, %(filename)s, %(levelname)s, %(message)s',datefmt = '%a, %d %b %Y %H:%M:%S',filename = os.path.join('/data/zabbix','weixin.log'),filemode = 'a')
-corpid = 'wwa211a8c23f5f7f08'  # 企业ID
-appsecret = 'MtOt1bWi11fg_Pbnn-tcmWC5BlZ_mJfk8hLiKN02FJY'  # secret
-agentid = 1000003  # AgentID
+corpid = '你自己的企业微信ID'  # 企业ID
+appsecret = '你自己的企业微信密链'  # secret
+agentid = 你自己的部门ID号  # AgentID
 # 获取accesstoken
 token_url = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=' + corpid + '&corpsecret=' + appsecret
 req = requests.get(token_url)
